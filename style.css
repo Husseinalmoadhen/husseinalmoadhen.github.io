@@ -11,7 +11,7 @@ body {
 }
 
 #wrapper {
-    width: 75%;
+    width: 60%;
     margin: auto;
     border: 2px solid #000000;
     background-color: #ffffff;
@@ -81,7 +81,7 @@ footer {
     background-color: #192c7a;
     color: #FFFFFF;
     text-align: center;
-    padding: 8px;
+    padding: 10px;
     font-style: italic;
 }
 
@@ -117,8 +117,8 @@ table a {
 }
 
 .circle-photo {
-    width: 160px;
-    height: 160px;
+    width: 180px;
+    height: 180px;
     border-radius: 50%;
     overflow: hidden;
     border: 3px solid black;
@@ -132,5 +132,5 @@ table a {
 
 .skills li {
     margin-bottom: 5px;
-    font-size: 18px;
+    font-size: 20px;
 }
