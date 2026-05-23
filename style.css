@@ -11,7 +11,7 @@ body {
 }
 
 #wrapper {
-    width: 2000px;
+    width: 1200px;
     margin: auto;
     border: 2px solid #000000;
     background-color: #ffffff;
@@ -127,7 +127,7 @@ table a {
     margin-left: 20px;
 
     position: relative;
-    top: -10px;
+    top: -20px;
 }
 
 .skills li {
