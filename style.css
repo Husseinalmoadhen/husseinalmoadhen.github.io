@@ -9,10 +9,10 @@ body {
 }
 
 #wrapper {
-    width: 2000px;
+    width: 40000px;
     margin-left: auto;
     margin-right: auto;
-    border: 8px solid #000000;
+    border: 16px solid #000000;
 }
 
 header {
