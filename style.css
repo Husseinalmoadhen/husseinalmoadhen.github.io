@@ -116,6 +116,27 @@ table a {
     font-weight: bold;
 }
 
+.certification {
+    background-color: #f4f4f4;
+    border-left: 6px solid #2c3e90;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.certification h3 {
+    margin-top: 0;
+}
+
+.certification a {
+    color: #2c3e90;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.certification a:hover {
+    text-decoration: underline;
+}
+
 .circle-photo {
     width: 180px;
     height: 180px;
