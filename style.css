@@ -5,13 +5,13 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
-
     margin: 0;
     padding: 20px;
 }
 
 #wrapper {
-    width: 1200px;
+    width: 100%;
+    max-width: 1200px;
     margin: auto;
     border: 2px solid #000000;
     background-color: #ffffff;
@@ -19,7 +19,7 @@ body {
 
 header {
     background-color: #192c7a;
-    color: #FFFFFF;
+    color: white;
     text-align: center;
     padding: 15px;
 }
@@ -57,12 +57,12 @@ nav a {
     padding: 15px;
     display: block;
     width: 150px;
-    color: #182721;
+    color: white;
 }
 
 nav a:hover {
-    color: #000000;
     background-color: #33a39b;
+    color: #ffffff;
 }
 
 main {
@@ -79,20 +79,21 @@ h2 {
 
 footer {
     background-color: #192c7a;
-    color: #FFFFFF;
+    color: white;
     text-align: center;
     padding: 12px;
     font-style: italic;
 }
 
 table {
-    border: 2px solid black;
-    border-collapse: collapse;
     width: 100%;
     margin-top: 20px;
+    border-collapse: collapse;
+    border: 2px solid black;
 }
 
-th, td {
+th,
+td {
     border: 1px solid black;
     padding: 12px;
     font-size: 18px;
@@ -100,20 +101,41 @@ th, td {
 
 th {
     background-color: #192c7a;
-    color: #FFFFFF;
+    color: white;
 }
 
 tr:nth-child(even) {
-    background-color: #1E7D76;
+    background-color: #d9f2ef;
 }
 
 tr:hover {
-    background-color: #bcbcbc;
+    background-color: #cfcfcf;
 }
 
 table a {
-    color: #0a047d;
+    color: #192c7a;
     font-weight: bold;
+    text-decoration: none;
+}
+
+table a:hover {
+    text-decoration: underline;
+}
+
+.circle-photo {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid black;
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.skills li {
+    margin-bottom: 8px;
+    font-size: 20px;
 }
 
 .certification {
@@ -129,29 +151,49 @@ table a {
 
 .certification a {
     color: #2c3e90;
-    font-weight: bold;
     text-decoration: none;
+    font-weight: bold;
 }
 
 .certification a:hover {
     text-decoration: underline;
 }
 
-.circle-photo {
-    width: 180px;
-    height: 180px;
-    border-radius: 50%;
-    overflow: hidden;
-    border: 3px solid black;
-    object-fit: cover;
-    float: right;
-    margin-left: 20px;
+@media screen and (max-width: 768px) {
 
-    position: relative;
-    top: -20px;
-}
+    body {
+        padding: 10px;
+    }
 
-.skills li {
-    margin-bottom: 5px;
-    font-size: 20px;
+    header h1 {
+        font-size: 36px;
+    }
+
+    header p {
+        font-size: 18px;
+    }
+
+    nav li {
+        display: block;
+    }
+
+    nav a {
+        width: auto;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    .circle-photo {
+        float: none;
+        display: block;
+        margin: 0 auto 20px;
+    }
+
+    th,
+    td {
+        font-size: 14px;
+        padding: 8px;
+    }
 }
